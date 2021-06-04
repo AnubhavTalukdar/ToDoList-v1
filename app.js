@@ -27,8 +27,8 @@ app.get("/", function(req, res)
 
   var day = date.toLocaleDateString("en-US", options);
 
-  res.send("Hola");
-  // res.render("list", {listTitle: day,  newListItems: items});
+  // res.send("Hola");
+  res.render("list", {listTitle: day,  newListItems: items});
 
 }
 
